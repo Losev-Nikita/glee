@@ -24,6 +24,7 @@
     &__text {
         font-size: 36px;
         line-height: 58px;
+        @extend %rubik-500;
         color: $menu;
         margin-left: 14px;
     }
@@ -34,14 +35,13 @@
 
     &__list {
         display: flex;
-        @extend %rubik-500;
-        
     }
 
     &__list-item {
         font-size: 15px;
         line-height: 22px;
         color: $menu;
+        @extend %rubik-400;
     }
 
     &__list-item+&__list-item {
@@ -119,6 +119,132 @@
         width: 21px;
         height: 21px;
         margin: 15px auto;
+    }
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    height: 357px;
+    border-bottom: 1px solid #dae4e9;
+    &__wrapper {
+        width: 210px;
+        margin-top: 80px;
+    }
+    &__address {
+        font-size: 14px;
+        line-height: 24px;
+        color: $footer;
+        @extend %rubik-400;
+        font-style: normal;
+        margin-top: 20px;
+    }
+    &__contacts {
+        margin-top: 20px;
+        display: inline-block;
+        color: $footer;
+        @extend %rubik-400;
+        font-size: 14px;
+        line-height: 32px;
+        }
+    &__contacts span {
+        text-transform: uppercase;
+    }
+    &__services, &__account {
+        width: 140px;
+        margin-top: 100px;
+    }
+    &__header {
+        font-size: 16px;
+        line-height: 21px;
+        color: #1f2044;
+        text-transform: uppercase;
+        @extend %dmsans-700;
+    }
+    &__list {
+        margin-top: 25px;
+    }
+    &__list-item {
+        font-size: 14px;
+        line-height: 32px;
+        @extend %rubik-400;
+    }
+    &__list-link {
+        color: $footer;
+    }
+    &__newsletter {
+        width: 280px;
+        margin-top: 100px;
+    }
+    &__text {
+        font-size: 14px;
+        line-height: 24px;
+        color: $footer;
+        margin-top: 25px;
+        @extend %rubik-400;
+    }
+    &__form {
+        margin-top: 38px;
+    }
+    &__form-input {
+        background-color: #fef7f0;
+        border: none;
+        padding: 14px 16px 15px;
+        width: 170px;
+        height: 40px;
+        font-size: 12px;
+        @extend %dmsans-400;
+        float: left;
+    }
+    &__form-input::placeholder {
+        color: #234969;
+    }
+    &__form-btn {
+        background-color: #a3bbc8;
+        color: #fff;
+        border: none;
+        padding: 0 16px;
+        height: 40px;
+        font-size: 14px;
+        @extend %dmsans-400;
+    }
+}
+
+.footer-bottom {
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    &__copy {
+        margin-top: 37px;
+        font-size: 14px;
+        color: $footer;
+        @extend %rubik-400;
+    }
+    &__nav {
+        margin-top: 34px;
+        @extend %rubik-400;
+    }
+    &__home, &__about, &__blog {
+        border-right: 3px solid $footer;
+    }
+    &__home {
+        padding-right: 14px;
+    }
+    &__about {
+        padding: 0 14px;
+    }
+    &__blog {
+        padding: 0 14px;
+    }
+    &__contact {
+        padding-left: 14px;
+    }
+    &__nav-items {
+        display: inline-block;
+    }
+    &__nav-link {
+        font-size: 14px;
+        color: $footer;
     }
 }
 
